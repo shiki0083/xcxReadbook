@@ -1,0 +1,15 @@
+<text class="title">男生</text>
+<view class='classify'>
+  <view class="card" wx:for="{{classifyList.male}}" wx:for-item="item" wx:for-index="index" wx:key="index" bindtap="goDetails" data-params="{{item}}" data-cls="male">
+    <view class="name">{{item.name}}</view>
+    <view class="count">{{item.bookCount}}</view>
+  </view>
+</view>
+<text class="title">女生</text>
+<view class='classify'>
+  <view class="card" wx:for="{{classifyList.female}}" wx:for-item="item" wx:for-index="index" wx:key="index" bindtap="goDetails" data-params="{{item}}" data-cls="male">
+    <view class="name">{{item.name}}</view>
+    <view class="count">{{item.bookCount}}</view>
+  </view>
+</view>
+<loading loading="{{loading}}" wx:if="{{loadshow}}"></loading>

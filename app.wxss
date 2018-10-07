@@ -1,0 +1,81 @@
+/**app.wxss**/
+@import "lib/css/iconfont.wxss";
+@import 'style/weui.wxss';
+@import 'style/iconfont.wxss';
+page {
+  font-family: Consolas, 'Courier New', monospace;
+}
+.dx-icon {
+  background-image: url("lib/svg/dx.svg")
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.cx-btn-primary {
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+}
+.my-col {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.my-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+   justify-content: space-between; 
+}
+.my-title {
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.my-author {
+  font-size: 14px;
+  color: green;
+}
+.my-intro {
+  width: 100%;
+  
+  overflow: hidden;
+}
+
+.loading {
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  vertical-align: center;
+  z-index: 100;
+  background: white;
+  transition: all 1s;
+}
+.cancel {
+  display: none;
+}
+.over-text {
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
